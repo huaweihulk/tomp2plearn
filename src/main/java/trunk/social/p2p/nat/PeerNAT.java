@@ -9,6 +9,7 @@ import trunk.social.p2p.message.Message;
 import trunk.social.p2p.message.Message.Type;
 import trunk.social.p2p.natpmp.NatPmpException;
 import trunk.social.p2p.p2p.Peer;
+import trunk.social.p2p.p2p.Shutdown;
 import trunk.social.p2p.p2p.builder.BootstrapBuilder;
 import trunk.social.p2p.p2p.builder.DiscoverBuilder;
 import trunk.social.p2p.peers.PeerAddress;
@@ -333,7 +334,6 @@ public class PeerNAT {
      *
      * @param relayPeerAddress
      * @param unreachablePeerAddress
-     * @param timeoutSeconds
      */
     private void checkRconPreconditions(final PeerAddress relayPeerAddress, final PeerAddress unreachablePeerAddress) {
         if (relayPeerAddress == null || unreachablePeerAddress == null) {

@@ -22,6 +22,7 @@ import trunk.social.p2p.dht.PeerDHT;
 import trunk.social.p2p.dht.PutBuilder;
 import trunk.social.p2p.dht.StorageRPC;
 import trunk.social.p2p.futures.*;
+import trunk.social.p2p.p2p.Shutdown;
 import trunk.social.p2p.peers.Number160;
 import trunk.social.p2p.peers.Number640;
 import trunk.social.p2p.peers.PeerAddress;
@@ -36,17 +37,16 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * This implements the default indirect replication.
- * 
+ *
  * @author Thomas Bocek
  * @author Maxat Pernebayev
- * 
  */
 public class IndirectReplication implements ResponsibilityListener, Runnable {
     private static final Logger LOG = LoggerFactory.getLogger(IndirectReplication.class);
     private static final int DEFAULT_REPLICATION_FACTOR = 6;
 
     private final PeerDHT peer;
-    
+
     private boolean autoReplication = false;
     private ReplicationFactor replicationFactor;
     private int delayMillis = -1;
@@ -58,225 +58,225 @@ public class IndirectReplication implements ResponsibilityListener, Runnable {
     private boolean keepData = false;
     private Replication replication;
     private Collection<ReplicationFilter> replicationFilters = new HashSet<ReplicationFilter>();
-    
+
     private ScheduledFuture<?> scheduledFuture;
-    
+
     private List<ResponsibilityListener> responsibilityListeners = null;
-    
+
     public IndirectReplication(PeerDHT peer) {
-    	this.peer = peer;
+        this.peer = peer;
 
-		peer.peer().addShutdownListener(new Shutdown() {
-			@Override
-			public BaseFuture shutdown() {
-				IndirectReplication.this.shutdown();
-				return new FutureDone<Void>().done();
-			}
-		});
+        peer.peer().addShutdownListener(new Shutdown() {
+            @Override
+            public BaseFuture shutdown() {
+                IndirectReplication.this.shutdown();
+                return new FutureDone<Void>().done();
+            }
+        });
     }
-    
+
     public boolean isAutoReplication() {
-    	return autoReplication;
+        return autoReplication;
     }
-    
+
     public IndirectReplication autoReplication(boolean autoReplication) {
-    	this.autoReplication = autoReplication;
-    	return this;
+        this.autoReplication = autoReplication;
+        return this;
     }
-    
+
     public IndirectReplication autoReplication() {
-    	this.autoReplication = true;
-    	return this;
+        this.autoReplication = true;
+        return this;
     }
-    
+
     public boolean isRsync() {
-    	return rsync;
+        return rsync;
     }
-    
+
     public IndirectReplication rsync(boolean rsync) {
-    	this.rsync = rsync;
-    	return this;
+        this.rsync = rsync;
+        return this;
     }
-    
+
     public IndirectReplication rsync() {
-    	this.rsync = true;
-    	return this;
+        this.rsync = true;
+        return this;
     }
-    
+
     public boolean isNRoot() {
-    	return nRoot;
+        return nRoot;
     }
-    
+
     public IndirectReplication nRoot(boolean nRoot) {
-    	this.nRoot = nRoot;
-    	return this;
+        this.nRoot = nRoot;
+        return this;
     }
-    
+
     public IndirectReplication nRoot() {
-    	this.nRoot = true;
-    	return this;
+        this.nRoot = true;
+        return this;
     }
-    
+
     public boolean isKeepingData() {
-    	return keepData;
+        return keepData;
     }
-    
+
     public IndirectReplication keepData(boolean keepData) {
-    	this.keepData = keepData;
-    	return this;
+        this.keepData = keepData;
+        return this;
     }
-    
-	/**
-	 * Replicated and stored data will be not deleted after loss of replication responsibility.
-	 */
+
+    /**
+     * Replicated and stored data will be not deleted after loss of replication responsibility.
+     */
     public IndirectReplication keepData() {
-    	this.keepData = false;
-    	return this;
+        this.keepData = false;
+        return this;
     }
+
     public IndirectReplication replicationFactor(ReplicationFactor replicationFactor) {
-    	this.replicationFactor = replicationFactor;
-    	return this;
+        this.replicationFactor = replicationFactor;
+        return this;
     }
-    
+
     public IndirectReplication replicationFactor(final int replicationFactor) {
-    	this.replicationFactor = new ReplicationFactor() {
-			@Override
-			public int replicationFactor() {
-				return replicationFactor;
-			}
-		};
-    	return this;
+        this.replicationFactor = new ReplicationFactor() {
+            @Override
+            public int replicationFactor() {
+                return replicationFactor;
+            }
+        };
+        return this;
     }
-    
+
     public ReplicationFactor replicationFactor() {
-    	return replicationFactor;
+        return replicationFactor;
     }
-    
+
     public IndirectReplication delayMillis(int delayMillis) {
-    	this.delayMillis = delayMillis;
-    	return this;
+        this.delayMillis = delayMillis;
+        return this;
     }
-    
+
     public int delayMillis() {
-    	return delayMillis;
+        return delayMillis;
     }
-    
+
     public IndirectReplication intervalMillis(int intervalMillis) {
-    	this.intervalMillis = intervalMillis;
-    	return this;
+        this.intervalMillis = intervalMillis;
+        return this;
     }
-    
+
     public int intervalMillis() {
-    	return intervalMillis;
+        return intervalMillis;
     }
-    
+
     public IndirectReplication blockSize(int blockSize) {
-    	this.blockSize = blockSize;
-    	return this;
+        this.blockSize = blockSize;
+        return this;
     }
-    
+
     public int blockSize() {
-    	return blockSize;
+        return blockSize;
     }
-    
-	public IndirectReplication addReplicationFilter(ReplicationFilter filter) {
-		if (replicationFilters == null) {
-			replicationFilters = new HashSet<ReplicationFilter>(1);
-		}
-		replicationFilters.add(filter);
-		return this;
-	}
 
-	public Collection<ReplicationFilter> replicationFilters() {
-		return replicationFilters;
-	}
+    public IndirectReplication addReplicationFilter(ReplicationFilter filter) {
+        if (replicationFilters == null) {
+            replicationFilters = new HashSet<ReplicationFilter>(1);
+        }
+        replicationFilters.add(filter);
+        return this;
+    }
 
-	public IndirectReplication replicationFilters(Collection<ReplicationFilter> replicationFilters) {
-		this.replicationFilters = replicationFilters;
-		return this;
-	}
-    
+    public Collection<ReplicationFilter> replicationFilters() {
+        return replicationFilters;
+    }
+
+    public IndirectReplication replicationFilters(Collection<ReplicationFilter> replicationFilters) {
+        this.replicationFilters = replicationFilters;
+        return this;
+    }
+
     public IndirectReplication start() {
-    	
-    	if (intervalMillis == -1) {
-			intervalMillis = 60 * 1000;
-		}
-		if (delayMillis == -1) {
-			delayMillis = 30 * 1000;
-		}
-		if (blockSize == -1) {
-			blockSize = 700;
-		}
-    	
-    	if(autoReplication) {
-    		replicationFactor = new AutoReplication(peer.peer()); 
-    	} else if (replicationFactor == null) {
-    		replicationFactor = new ReplicationFactor() {
-				@Override
-				public int replicationFactor() {
-					return DEFAULT_REPLICATION_FACTOR;
-				}
-			};
-    	}
-    	
-    	if(replicationFilters == null) {
-    		replicationFilters = new HashSet<ReplicationFilter>(0);
-    	}
-    	
-    	this.replication = new Replication(peer, replicationFactor.replicationFactor(), nRoot, keepData, replicationFilters);
-    	this.replication.addResponsibilityListener(this);
-    	if(responsibilityListeners!=null) {
-    		for(ResponsibilityListener responsibilityListener:responsibilityListeners) {
-    			this.replication.addResponsibilityListener(responsibilityListener);
-    		}
-    		responsibilityListeners = null;
-    	}
-    	peer.storeRPC().replicationListener(replication);
-    	
-		if(rsync) {
-			replicationSender = new PeerSync(peer, replication, blockSize);
-		} else if (replicationSender == null) {
-			replicationSender = new DefaultReplicationSender(peer);
-		}
-    	
-    	scheduledFuture = peer.peer().connectionBean().timer().scheduleAtFixedRate(
-    			this, intervalMillis, intervalMillis, TimeUnit.MILLISECONDS);
-    	return this;
-    }
-    
-    public IndirectReplication addResponsibilityListener(final ResponsibilityListener responsibilityListener) {
-    	if(replication == null) {
-    		if(responsibilityListeners == null) {
-    			responsibilityListeners = new ArrayList<ResponsibilityListener>();    			
-    		}
-    		responsibilityListeners.add(responsibilityListener);
-    	} else {
-    		replication.addResponsibilityListener(responsibilityListener);
-    	}
-    	return this;
-    }
-    
-    public IndirectReplication removeResponsibilityListener(final ResponsibilityListener responsibilityListener) {
-    	if(replication == null) {
-    		if(responsibilityListeners != null) {
-    			responsibilityListeners.remove(responsibilityListener);
-    		}
-    	} else {
-    		replication.removeResponsibilityListener(responsibilityListener);
-    	}
-    	return this;
+
+        if (intervalMillis == -1) {
+            intervalMillis = 60 * 1000;
+        }
+        if (delayMillis == -1) {
+            delayMillis = 30 * 1000;
+        }
+        if (blockSize == -1) {
+            blockSize = 700;
+        }
+
+        if (autoReplication) {
+            replicationFactor = new AutoReplication(peer.peer());
+        } else if (replicationFactor == null) {
+            replicationFactor = new ReplicationFactor() {
+                @Override
+                public int replicationFactor() {
+                    return DEFAULT_REPLICATION_FACTOR;
+                }
+            };
+        }
+
+        if (replicationFilters == null) {
+            replicationFilters = new HashSet<ReplicationFilter>(0);
+        }
+
+        this.replication = new Replication(peer, replicationFactor.replicationFactor(), nRoot, keepData, replicationFilters);
+        this.replication.addResponsibilityListener(this);
+        if (responsibilityListeners != null) {
+            for (ResponsibilityListener responsibilityListener : responsibilityListeners) {
+                this.replication.addResponsibilityListener(responsibilityListener);
+            }
+            responsibilityListeners = null;
+        }
+        peer.storeRPC().replicationListener(replication);
+
+        if (rsync) {
+            replicationSender = new PeerSync(peer, replication, blockSize);
+        } else if (replicationSender == null) {
+            replicationSender = new DefaultReplicationSender(peer);
+        }
+
+        scheduledFuture = peer.peer().connectionBean().timer().scheduleAtFixedRate(
+                this, intervalMillis, intervalMillis, TimeUnit.MILLISECONDS);
+        return this;
     }
 
-    
+    public IndirectReplication addResponsibilityListener(final ResponsibilityListener responsibilityListener) {
+        if (replication == null) {
+            if (responsibilityListeners == null) {
+                responsibilityListeners = new ArrayList<ResponsibilityListener>();
+            }
+            responsibilityListeners.add(responsibilityListener);
+        } else {
+            replication.addResponsibilityListener(responsibilityListener);
+        }
+        return this;
+    }
+
+    public IndirectReplication removeResponsibilityListener(final ResponsibilityListener responsibilityListener) {
+        if (replication == null) {
+            if (responsibilityListeners != null) {
+                responsibilityListeners.remove(responsibilityListener);
+            }
+        } else {
+            replication.removeResponsibilityListener(responsibilityListener);
+        }
+        return this;
+    }
+
 
     @Override
     public FutureDone<?> otherResponsible(final Number160 locationKey, final PeerAddress other) {
 
         LOG.debug("Other peer {} is responsible for {}. I'm {}", other, locationKey, peer.peerAddress());
-        
+
         Number640 min = new Number640(locationKey, Number160.ZERO, Number160.ZERO, Number160.ZERO);
         Number640 max = new Number640(locationKey, Number160.MAX_VALUE, Number160.MAX_VALUE,
-        		Number160.MAX_VALUE);
+                Number160.MAX_VALUE);
         final NavigableMap<Number640, Data> dataMap = peer.storageLayer().get(min, max, -1, true);
         LOG.debug("transfer from {} to {} for key {}", peer.peerAddress(), other, locationKey);
         return replicationSender.sendDirect(other, locationKey, dataMap);
@@ -287,7 +287,7 @@ public class IndirectReplication implements ResponsibilityListener, Runnable {
         LOG.debug("I ({}) now responsible for {}", peer.peerAddress(), locationKey);
         return synchronizeData(locationKey);
     }
-    
+
     @Override
     public FutureDone<?> meResponsible(final Number160 locationKey, PeerAddress newPeer) {
         LOG.debug("I ({}) sync {} to {}", peer.peerAddress(), locationKey, newPeer);
@@ -300,36 +300,35 @@ public class IndirectReplication implements ResponsibilityListener, Runnable {
 
     @Override
     public void run() {
-    	try {
-    		// we get called every x seconds for content we are responsible for. So
-    		// we need to make sure that there are enough copies. The easy way is to
-    		// publish it again... The good way is to do a diff
-    		Collection<Number160> locationKeys = peer.storageLayer().findContentForResponsiblePeerID(peer.peerID());
-        
-    		for (Number160 locationKey : locationKeys) {
-    			synchronizeData(locationKey);
-    		}
-    		// recalculate replication factor
-    		int replicationFactor = IndirectReplication.this.replicationFactor.replicationFactor();
-    		replication.replicationFactor(replicationFactor);
-    	} catch (Throwable t) {
-    		t.printStackTrace();
-    	}
+        try {
+            // we get called every x seconds for content we are responsible for. So
+            // we need to make sure that there are enough copies. The easy way is to
+            // publish it again... The good way is to do a diff
+            Collection<Number160> locationKeys = peer.storageLayer().findContentForResponsiblePeerID(peer.peerID());
+
+            for (Number160 locationKey : locationKeys) {
+                synchronizeData(locationKey);
+            }
+            // recalculate replication factor
+            int replicationFactor = IndirectReplication.this.replicationFactor.replicationFactor();
+            replication.replicationFactor(replicationFactor);
+        } catch (Throwable t) {
+            t.printStackTrace();
+        }
     }
 
-	public static String getVersionKeysFromMap(Map<Number640, Data> dataMap) {
-		String result = "";
-		for (Number640 key : dataMap.keySet()) {
-			result += key.versionKey() + " ";
-		}
-		return result;
-	}
+    public static String getVersionKeysFromMap(Map<Number640, Data> dataMap) {
+        String result = "";
+        for (Number640 key : dataMap.keySet()) {
+            result += key.versionKey() + " ";
+        }
+        return result;
+    }
 
     /**
      * Get the data that I'm responsible for and make sure that there are enough replicas.
-     * 
-     * @param locationKey
-     *            The location key.
+     *
+     * @param locationKey The location key.
      */
     private FutureDone<?> synchronizeData(final Number160 locationKey) {
         return send(locationKey);
@@ -337,13 +336,10 @@ public class IndirectReplication implements ResponsibilityListener, Runnable {
 
     /**
      * If my peer is responsible, I'll issue a put if absent to make sure all replicas are stored.
-     * 
-     * @param locationKey
-     *            The location key
-     * @param domainKey
-     *            The domain key
-     * @param dataMapConverted
-     *            The data to store
+     *
+     * @param locationKey      The location key
+     * @param domainKey        The domain key
+     * @param dataMapConverted The data to store
      * @return The future of the put
      */
     protected FutureDone<?> send(final Number160 locationKey) {
@@ -354,14 +350,14 @@ public class IndirectReplication implements ResponsibilityListener, Runnable {
         int count = 0;
         List<FutureDone<?>> retVal = new ArrayList<FutureDone<?>>(replicationFactor);
         for (PeerStatistic peerStatistic : sortedSet) {
-        	if(replication.rejectReplication(peerStatistic.peerAddress())) {
-        		continue;
-        	}
-        	
+            if (replication.rejectReplication(peerStatistic.peerAddress())) {
+                continue;
+            }
+
             count++;
             closePeers.add(peerStatistic.peerAddress());
             //this must be inside the loop as we need to retain the data for every peer
-            
+
             Number640 min = new Number640(locationKey, Number160.ZERO, Number160.ZERO, Number160.ZERO);
             Number640 max = new Number640(locationKey, Number160.MAX_VALUE, Number160.MAX_VALUE,
                     Number160.MAX_VALUE);
@@ -376,17 +372,17 @@ public class IndirectReplication implements ResponsibilityListener, Runnable {
                 locationKey, closePeers);
         return FutureDone.whenAll(retVal);
     }
-    
+
     public void shutdown() {
-    	if(scheduledFuture!=null) {
-    		scheduledFuture.cancel(false);
-    	}
+        if (scheduledFuture != null) {
+            scheduledFuture.cancel(false);
+        }
     }
 
     private static class DefaultReplicationSender implements ReplicationSender {
         private StorageRPC storageRPC;
         private PeerDHT peer;
- 
+
         private DefaultReplicationSender(PeerDHT peer) {
             this.peer = peer;
             this.storageRPC = peer.storeRPC();
@@ -394,20 +390,16 @@ public class IndirectReplication implements ResponsibilityListener, Runnable {
 
         /**
          * If an other peer is responsible, we send this peer our data, so that the other peer can take care of this.
-         * 
-         * @param other
-         *            The other peer
-         * @param locationKey
-         *            The location key
-         * @param domainKey
-         *            The domain key
-         * @param dataMapConvert
-         *            The data to store
+         *
+         * @param other          The other peer
+         * @param locationKey    The location key
+         * @param domainKey      The domain key
+         * @param dataMapConvert The data to store
          */
         public FutureDone<Void> sendDirect(final PeerAddress other, final Number160 locationKey, final NavigableMap<Number640, Data> dataMap) {
             final FutureDone<Void> futureDone = new FutureDone<Void>();
-        	FutureChannelCreator futureChannelCreator = peer.peer().connectionBean().reservation().create(0, 1);
-        	Utils.addReleaseListener(futureChannelCreator, futureDone);
+            FutureChannelCreator futureChannelCreator = peer.peer().connectionBean().reservation().create(0, 1);
+            Utils.addReleaseListener(futureChannelCreator, futureDone);
             futureChannelCreator.addListener(new BaseFutureAdapter<FutureChannelCreator>() {
                 @Override
                 public void operationComplete(final FutureChannelCreator future) throws Exception {
@@ -417,24 +409,24 @@ public class IndirectReplication implements ResponsibilityListener, Runnable {
                         FutureResponse futureResponse = storageRPC.putReplica(other, putBuilder,
                                 future.channelCreator());
                         futureResponse.addListener(new BaseFutureAdapter<FutureResponse>() {
-							@Override
-							public void operationComplete(FutureResponse future)
-									throws Exception {
-								if(future.isSuccess()) {
-									futureDone.done();	
-								} else {
-									futureDone.failed(future);
-								}
-							}
-						});
+                            @Override
+                            public void operationComplete(FutureResponse future)
+                                    throws Exception {
+                                if (future.isSuccess()) {
+                                    futureDone.done();
+                                } else {
+                                    futureDone.failed(future);
+                                }
+                            }
+                        });
                         peer.peer().notifyAutomaticFutures(futureResponse);
                     } else {
-                    	futureDone.failed(future);
+                        futureDone.failed(future);
                         LOG.error("otherResponsible failed {}", future.failedReason());
                     }
                 }
             });
             return futureDone;
-        }   
+        }
     }
 }

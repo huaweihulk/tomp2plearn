@@ -473,7 +473,6 @@ public final class PeerAddress implements Comparable<PeerAddress>, Serializable 
     /**
      * Serializes to an existing array.
      *
-     * @param me     The array where the result should be stored
      * @param offset The offset where to start to save the result in the byte array
      * @return The new offset.
      */
@@ -746,7 +745,7 @@ public final class PeerAddress implements Comparable<PeerAddress>, Serializable 
     }
 
 	/*private int prefix4(InetAddress inetAddress) {
-		NetworkInterface networkInterface;
+        NetworkInterface networkInterface;
 		try {
 			networkInterface = NetworkInterface.getByInetAddress(internalPeerSocketAddress.inetAddress());
 			if(networkInterface == null) {
