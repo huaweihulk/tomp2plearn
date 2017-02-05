@@ -2,542 +2,274 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="968ec033-e8e3-40a7-8fbb-c9f0d5d09dd6" name="Default" comment="add tomp2p">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/connection/Bindings.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/connection/ChannelClientConfiguration.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/connection/ChannelCreator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/connection/ChannelServer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/connection/ChannelServerConfiguration.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/connection/ConnectionBean.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/connection/ConnectionConfiguration.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/connection/DSASignatureFactory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/connection/DefaultConnectionConfiguration.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/connection/DefaultSendBehavior.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/connection/DiscoverNetworkListener.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/connection/DiscoverNetworks.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/connection/DiscoverResults.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/connection/Dispatcher.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/connection/DropConnectionInboundHandler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/connection/HeartBeat.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/connection/HolePInitiator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/connection/IdleStateHandlerTomP2P.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/connection/PeerBean.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/connection/PeerConnection.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/connection/PeerCreator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/connection/PeerException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/connection/PingBuilderFactory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/connection/PipelineFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/connection/Ports.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/connection/RSASignatureFactory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/connection/RequestHandler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/connection/Reservation.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/connection/Responder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/connection/SendBehavior.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/connection/Sender.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/connection/SignatureFactory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/connection/StandardProtocolFamily.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/connection/TimeoutFactory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/dht/AddBuilder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/dht/CumulativeScheme.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/dht/DHTBuilder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/dht/DigestBuilder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/dht/DistributedHashTable.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/dht/EvaluatingSchemeDHT.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/dht/FutureDHT.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/dht/FutureDigest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/dht/FutureGet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/dht/FuturePut.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/dht/FutureRemove.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/dht/FutureSend.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/dht/GetBuilder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/dht/OperationMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/dht/ParallelRequestBuilder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/dht/PeerBuilderDHT.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/dht/PeerDHT.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/dht/PutBuilder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/dht/RangeLock.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/dht/RemoveBuilder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/dht/ReplicationListener.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/dht/SearchableBuilder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/dht/SendBuilder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/dht/Storage.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/dht/StorageLayer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/dht/StorageMemory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/dht/StorageRPC.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/dht/UtilsDHT.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/dht/VotingSchemeDHT.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/futures/BaseFuture.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/futures/BaseFutureAdapter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/futures/BaseFutureImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/futures/BaseFutureListener.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/futures/Cancel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/futures/FutureAnnounce.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/futures/FutureAsyncTask.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/futures/FutureBootstrap.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/futures/FutureChannelCreator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/futures/FutureCreator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/futures/FutureDirect.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/futures/FutureDiscover.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/futures/FutureDone.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/futures/FutureForkJoin.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/futures/FutureLateJoin.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/futures/FutureLaterJoin.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/futures/FuturePeerConnection.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/futures/FuturePing.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/futures/FutureProgres.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/futures/FutureResponse.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/futures/FutureRouting.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/futures/FutureRunnable.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/futures/FutureShutdown.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/futures/FutureSuccessEvaluator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/futures/FutureSuccessEvaluatorCommunication.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/futures/FutureSuccessEvaluatorOperation.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/futures/FutureTask.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/futures/FutureWrappedBootstrap.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/futures/FutureWrapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/futures/FutureWrapper2.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/futures/Futures.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/holep/DuplicatesHandler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/holep/HolePInitiatorImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/holep/HolePRPC.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/holep/HolePScheduler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/holep/NATType.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/holep/NATTypeDetection.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/holep/strategy/AbstractHolePStrategy.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/holep/strategy/HolePStrategy.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/holep/strategy/NonPreservingSequentialStrategy.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/holep/strategy/PortPreservingStrategy.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/message/Buffer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/message/CountConnectionOutboundHandler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/message/DSASignatureCodec.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/message/DataFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/message/DataFilterTTL.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/message/DataMap.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/message/Decoder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/message/Encoder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/message/KeyCollection.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/message/KeyMap640Keys.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/message/KeyMapByte.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/message/Message.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/message/MessageContentIndex.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/message/MessageHeaderCodec.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/message/MessageID.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/message/NeighborSet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/message/RSASignatureCodec.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/message/SignatureCodec.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/message/TomP2PCumulationTCP.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/message/TomP2POutbound.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/message/TomP2PSinglePacketUDP.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/message/TrackerData.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/nat/FutureNAT.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/nat/NATUtils.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/nat/PeerBuilderNAT.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/nat/PeerNAT.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/natpmp/ExternalAddressRequestMessage.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/natpmp/Gateway.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/natpmp/MapRequestMessage.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/natpmp/Message.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/natpmp/MessageQueue.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/natpmp/MessageResponseInterface.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/natpmp/MessageType.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/natpmp/NatPmpDevice.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/natpmp/NatPmpException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/natpmp/ResultCode.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/natpmp/lgpl.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/p2p/AutomaticFuture.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/p2p/BroadcastHandler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/p2p/DefaultPeerStatisticComparator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/p2p/DistributedRouting.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/p2p/JobScheduler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/p2p/MaintenanceTask.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/p2p/Peer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/p2p/PeerBuilder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/p2p/PeerInit.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/p2p/PeerReachable.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/p2p/PeerReceivedBroadcastPing.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/p2p/PeerStatisticComparator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/p2p/PostRoutingFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/p2p/RTTPeerStatisticComparator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/p2p/RequestConfiguration.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/p2p/RequestP2PConfiguration.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/p2p/RoutingConfiguration.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/p2p/RoutingMechanism.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/p2p/Shutdown.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/p2p/SlowPeerFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/p2p/Statistics.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/p2p/StructuredBroadcastHandler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/p2p/UpdatableTreeSet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/p2p/builder/BasicBuilder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/p2p/builder/BootstrapBuilder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/p2p/builder/BroadcastBuilder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/p2p/builder/Builder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/p2p/builder/DiscoverBuilder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/p2p/builder/PingBuilder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/p2p/builder/RoutingBuilder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/p2p/builder/SendDirectBuilder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/p2p/builder/ShutdownBuilder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/p2p/builder/SignatureBuilder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/peers/DefaultMaintenance.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/peers/DefaultPeerFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/peers/IP.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/peers/LocalMapConf.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/peers/Maintainable.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/peers/Maintenance.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/peers/Number160.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/peers/Number320.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/peers/Number480.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/peers/Number640.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/peers/PeerAddress.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/peers/PeerIPFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/peers/PeerMap.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/peers/PeerMapChangeListener.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/peers/PeerMapConfiguration.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/peers/PeerMapFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/peers/PeerSocketAddress.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/peers/PeerStatRoutingFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/peers/PeerStatistic.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/peers/PeerStatusListener.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/peers/RTT.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/relay/DistributedRelay.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/relay/Forwarder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/relay/NoDirectResponse.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/relay/PeerMapUpdateTask.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/relay/RconRPC.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/relay/RelayCallback.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/relay/RelayListener.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/relay/RelayRPC.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/relay/RelayUtils.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/replication/AutoReplication.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/replication/IndirectReplication.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/replication/Replication.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/replication/ReplicationFactor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/replication/ReplicationFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/replication/ReplicationSender.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/replication/ResponsibilityListener.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/replication/SlowReplicationFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/rpc/BloomfilterFactory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/rpc/BroadcastRPC.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/rpc/CountingBloomFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/rpc/DefaultBloomfilterFactory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/rpc/DigestInfo.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/rpc/DigestResult.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/rpc/DirectDataRPC.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/rpc/DispatchHandler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/rpc/NeighborRPC.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/rpc/ObjectDataReply.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/rpc/PingRPC.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/rpc/QuitRPC.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/rpc/RPC.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/rpc/RPCUtils.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/rpc/RawDataReply.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/rpc/SendDirectBuilderI.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/rpc/SimpleBloomFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/social/PeerSocial.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/storage/AlternativeCompositeByteBuf.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/storage/Data.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/storage/DataBuffer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/storage/DataSerializer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/storage/DigestStorage.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/storage/DigestTracker.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/storage/StorageDisk.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/synchronization/Checksum.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/synchronization/Instruction.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/synchronization/PeerSync.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/synchronization/RArray.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/synchronization/RSync.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/synchronization/SyncBuilder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/synchronization/SyncRPC.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/synchronization/SyncStat.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/synchronization/SyncUtils.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/tracker/AddTrackerBuilder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/tracker/DistributedTracker.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/tracker/FutureTracker.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/tracker/GetTrackerBuilder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/tracker/PeerBuilderTracker.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/tracker/PeerExchange.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/tracker/PeerExchangeHandler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/tracker/PeerExchangeRPC.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/tracker/PeerTracker.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/tracker/TrackerBuilder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/tracker/TrackerConfiguration.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/tracker/TrackerRPC.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/tracker/TrackerStorage.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/tracker/TrackerTriple.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/tracker/UtilsTracker.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/utils/CacheMap.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/utils/ConcurrentCacheMap.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/utils/ConcurrentCacheSet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/utils/FIFOCache.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/utils/MultiByteBufferInputStream.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/utils/Pair.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/p2p/utils/Utils.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/connection/Bindings.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/connection/ChannelClientConfiguration.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/connection/ChannelCreator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/connection/ChannelServer.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/connection/ChannelServerConfiguration.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/connection/ConnectionBean.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/connection/ConnectionConfiguration.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/connection/DSASignatureFactory.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/connection/DefaultConnectionConfiguration.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/connection/DefaultSendBehavior.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/connection/DiscoverNetworkListener.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/connection/DiscoverNetworks.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/connection/DiscoverResults.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/connection/Dispatcher.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/connection/DropConnectionInboundHandler.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/connection/HeartBeat.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/connection/HolePInitiator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/connection/IdleStateHandlerTomP2P.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/connection/PeerBean.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/connection/PeerConnection.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/connection/PeerCreator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/connection/PeerException.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/connection/PingBuilderFactory.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/connection/PipelineFilter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/connection/Ports.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/connection/RSASignatureFactory.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/connection/RequestHandler.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/connection/Reservation.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/connection/Responder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/connection/SendBehavior.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/connection/Sender.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/connection/SignatureFactory.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/connection/StandardProtocolFamily.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/connection/TimeoutFactory.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/dht/AddBuilder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/dht/CumulativeScheme.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/dht/DHTBuilder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/dht/DigestBuilder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/dht/DistributedHashTable.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/dht/EvaluatingSchemeDHT.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/dht/FutureDHT.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/dht/FutureDigest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/dht/FutureGet.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/dht/FuturePut.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/dht/FutureRemove.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/dht/FutureSend.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/dht/GetBuilder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/dht/OperationMapper.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/dht/ParallelRequestBuilder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/dht/PeerBuilderDHT.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/dht/PeerDHT.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/dht/PutBuilder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/dht/RangeLock.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/dht/RemoveBuilder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/dht/ReplicationListener.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/dht/SearchableBuilder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/dht/SendBuilder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/dht/Storage.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/dht/StorageLayer.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/dht/StorageMemory.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/dht/StorageRPC.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/dht/UtilsDHT.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/dht/VotingSchemeDHT.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/futures/BaseFuture.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/futures/BaseFutureAdapter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/futures/BaseFutureImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/futures/BaseFutureListener.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/futures/Cancel.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/futures/FutureAnnounce.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/futures/FutureAsyncTask.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/futures/FutureBootstrap.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/futures/FutureChannelCreator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/futures/FutureCreator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/futures/FutureDirect.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/futures/FutureDiscover.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/futures/FutureDone.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/futures/FutureForkJoin.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/futures/FutureLateJoin.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/futures/FutureLaterJoin.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/futures/FuturePeerConnection.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/futures/FuturePing.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/futures/FutureProgres.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/futures/FutureResponse.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/futures/FutureRouting.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/futures/FutureRunnable.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/futures/FutureShutdown.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/futures/FutureSuccessEvaluator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/futures/FutureSuccessEvaluatorCommunication.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/futures/FutureSuccessEvaluatorOperation.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/futures/FutureTask.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/futures/FutureWrappedBootstrap.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/futures/FutureWrapper.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/futures/FutureWrapper2.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/futures/Futures.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/holep/DuplicatesHandler.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/holep/HolePInitiatorImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/holep/HolePRPC.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/holep/HolePScheduler.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/holep/NATType.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/holep/NATTypeDetection.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/holep/strategy/AbstractHolePStrategy.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/holep/strategy/HolePStrategy.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/holep/strategy/NonPreservingSequentialStrategy.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/holep/strategy/PortPreservingStrategy.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/message/Buffer.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/message/CountConnectionOutboundHandler.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/message/DSASignatureCodec.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/message/DataFilter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/message/DataFilterTTL.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/message/DataMap.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/message/Decoder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/message/Encoder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/message/KeyCollection.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/message/KeyMap640Keys.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/message/KeyMapByte.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/message/Message.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/message/MessageContentIndex.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/message/MessageHeaderCodec.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/message/MessageID.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/message/NeighborSet.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/message/RSASignatureCodec.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/message/SignatureCodec.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/message/TomP2PCumulationTCP.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/message/TomP2POutbound.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/message/TomP2PSinglePacketUDP.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/message/TrackerData.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/nat/FutureNAT.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/nat/NATUtils.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/nat/PeerBuilderNAT.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/nat/PeerNAT.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/natpmp/ExternalAddressRequestMessage.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/natpmp/Gateway.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/natpmp/MapRequestMessage.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/natpmp/Message.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/natpmp/MessageQueue.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/natpmp/MessageResponseInterface.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/natpmp/MessageType.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/natpmp/NatPmpDevice.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/natpmp/NatPmpException.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/natpmp/ResultCode.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/p2p/AutomaticFuture.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/p2p/BroadcastHandler.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/p2p/DefaultPeerStatisticComparator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/p2p/DistributedRouting.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/p2p/JobScheduler.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/p2p/MaintenanceTask.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/p2p/Peer.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/p2p/PeerBuilder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/p2p/PeerInit.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/p2p/PeerReachable.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/p2p/PeerReceivedBroadcastPing.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/p2p/PeerStatisticComparator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/p2p/PostRoutingFilter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/p2p/RTTPeerStatisticComparator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/p2p/RequestConfiguration.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/p2p/RequestP2PConfiguration.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/p2p/RoutingConfiguration.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/p2p/RoutingMechanism.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/p2p/Shutdown.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/p2p/SlowPeerFilter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/p2p/Statistics.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/p2p/StructuredBroadcastHandler.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/p2p/UpdatableTreeSet.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/p2p/builder/BasicBuilder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/p2p/builder/BootstrapBuilder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/p2p/builder/BroadcastBuilder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/p2p/builder/Builder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/p2p/builder/DiscoverBuilder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/p2p/builder/PingBuilder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/p2p/builder/RoutingBuilder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/p2p/builder/SendDirectBuilder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/p2p/builder/ShutdownBuilder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/p2p/builder/SignatureBuilder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/peers/DefaultMaintenance.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/peers/DefaultPeerFilter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/peers/IP.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/peers/LocalMapConf.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/peers/Maintainable.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/peers/Maintenance.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/peers/Number160.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/peers/Number320.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/peers/Number480.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/peers/Number640.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/peers/PeerAddress.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/peers/PeerIPFilter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/peers/PeerMap.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/peers/PeerMapChangeListener.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/peers/PeerMapConfiguration.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/peers/PeerMapFilter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/peers/PeerSocketAddress.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/peers/PeerStatRoutingFilter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/peers/PeerStatistic.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/peers/PeerStatusListener.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/peers/RTT.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/relay/DistributedRelay.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/relay/Forwarder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/relay/NoDirectResponse.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/relay/PeerMapUpdateTask.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/relay/RconRPC.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/relay/RelayCallback.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/relay/RelayListener.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/relay/RelayRPC.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/relay/RelayUtils.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/replication/AutoReplication.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/replication/IndirectReplication.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/replication/Replication.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/replication/ReplicationFactor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/replication/ReplicationFilter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/replication/ReplicationSender.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/replication/ResponsibilityListener.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/replication/SlowReplicationFilter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/rpc/BloomfilterFactory.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/rpc/BroadcastRPC.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/rpc/CountingBloomFilter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/rpc/DefaultBloomfilterFactory.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/rpc/DigestInfo.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/rpc/DigestResult.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/rpc/DirectDataRPC.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/rpc/DispatchHandler.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/rpc/NeighborRPC.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/rpc/ObjectDataReply.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/rpc/PingRPC.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/rpc/QuitRPC.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/rpc/RPC.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/rpc/RPCUtils.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/rpc/RawDataReply.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/rpc/SendDirectBuilderI.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/rpc/SimpleBloomFilter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/social/PeerSocial.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/storage/AlternativeCompositeByteBuf.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/storage/Data.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/storage/DataBuffer.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/storage/DataSerializer.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/storage/DigestStorage.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/storage/DigestTracker.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/storage/StorageDisk.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/synchronization/Checksum.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/synchronization/Instruction.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/synchronization/PeerSync.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/synchronization/RArray.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/synchronization/RSync.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/synchronization/SyncBuilder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/synchronization/SyncRPC.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/synchronization/SyncStat.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/synchronization/SyncUtils.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/tracker/AddTrackerBuilder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/tracker/DistributedTracker.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/tracker/FutureTracker.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/tracker/GetTrackerBuilder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/tracker/PeerBuilderTracker.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/tracker/PeerExchange.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/tracker/PeerExchangeHandler.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/tracker/PeerExchangeRPC.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/tracker/PeerTracker.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/tracker/TrackerBuilder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/tracker/TrackerConfiguration.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/tracker/TrackerRPC.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/tracker/TrackerStorage.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/tracker/TrackerTriple.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/tracker/UtilsTracker.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/utils/CacheMap.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/utils/ConcurrentCacheMap.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/utils/ConcurrentCacheSet.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/utils/FIFOCache.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/utils/MultiByteBufferInputStream.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/utils/Pair.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/utils/Utils.java" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/trunk/social/p2p/natpmp/lgpl.txt" afterPath="$PROJECT_DIR$/src/main/java/p2p/natpmp/lgpl.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/connection/Bindings.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/connection/Bindings.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/connection/ChannelClientConfiguration.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/connection/ChannelClientConfiguration.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/connection/ChannelCreator.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/connection/ChannelCreator.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/connection/ChannelServer.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/connection/ChannelServer.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/connection/ChannelServerConfiguration.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/connection/ChannelServerConfiguration.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/connection/ConnectionBean.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/connection/ConnectionBean.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/connection/ConnectionConfiguration.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/connection/ConnectionConfiguration.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/connection/DSASignatureFactory.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/connection/DSASignatureFactory.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/connection/DefaultConnectionConfiguration.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/connection/DefaultConnectionConfiguration.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/connection/DefaultSendBehavior.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/connection/DefaultSendBehavior.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/connection/DiscoverNetworkListener.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/connection/DiscoverNetworkListener.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/connection/DiscoverNetworks.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/connection/DiscoverNetworks.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/connection/DiscoverResults.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/connection/DiscoverResults.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/connection/Dispatcher.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/connection/Dispatcher.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/connection/DropConnectionInboundHandler.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/connection/DropConnectionInboundHandler.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/connection/HeartBeat.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/connection/HeartBeat.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/connection/HolePInitiator.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/connection/HolePInitiator.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/connection/IdleStateHandlerTomP2P.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/connection/IdleStateHandlerTomP2P.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/connection/PeerBean.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/connection/PeerBean.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/connection/PeerConnection.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/connection/PeerConnection.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/connection/PeerCreator.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/connection/PeerCreator.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/connection/PeerException.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/connection/PeerException.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/connection/PingBuilderFactory.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/connection/PingBuilderFactory.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/connection/PipelineFilter.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/connection/PipelineFilter.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/connection/Ports.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/connection/Ports.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/connection/RSASignatureFactory.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/connection/RSASignatureFactory.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/connection/RequestHandler.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/connection/RequestHandler.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/connection/Reservation.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/connection/Reservation.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/connection/Responder.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/connection/Responder.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/connection/SendBehavior.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/connection/SendBehavior.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/connection/Sender.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/connection/Sender.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/connection/SignatureFactory.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/connection/SignatureFactory.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/connection/StandardProtocolFamily.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/connection/StandardProtocolFamily.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/connection/TimeoutFactory.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/connection/TimeoutFactory.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/dht/AddBuilder.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/dht/AddBuilder.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/dht/CumulativeScheme.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/dht/CumulativeScheme.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/dht/DHTBuilder.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/dht/DHTBuilder.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/dht/DigestBuilder.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/dht/DigestBuilder.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/dht/DistributedHashTable.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/dht/DistributedHashTable.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/dht/EvaluatingSchemeDHT.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/dht/EvaluatingSchemeDHT.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/dht/FutureDHT.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/dht/FutureDHT.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/dht/FutureDigest.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/dht/FutureDigest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/dht/FutureGet.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/dht/FutureGet.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/dht/FuturePut.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/dht/FuturePut.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/dht/FutureRemove.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/dht/FutureRemove.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/dht/FutureSend.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/dht/FutureSend.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/dht/GetBuilder.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/dht/GetBuilder.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/dht/OperationMapper.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/dht/OperationMapper.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/dht/ParallelRequestBuilder.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/dht/ParallelRequestBuilder.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/dht/PeerBuilderDHT.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/dht/PeerBuilderDHT.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/dht/PeerDHT.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/dht/PeerDHT.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/dht/PutBuilder.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/dht/PutBuilder.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/dht/RangeLock.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/dht/RangeLock.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/dht/RemoveBuilder.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/dht/RemoveBuilder.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/dht/ReplicationListener.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/dht/ReplicationListener.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/dht/SearchableBuilder.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/dht/SearchableBuilder.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/dht/SendBuilder.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/dht/SendBuilder.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/dht/Storage.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/dht/Storage.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/dht/StorageLayer.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/dht/StorageLayer.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/dht/StorageMemory.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/dht/StorageMemory.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/dht/StorageRPC.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/dht/StorageRPC.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/dht/UtilsDHT.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/dht/UtilsDHT.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/dht/VotingSchemeDHT.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/dht/VotingSchemeDHT.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/futures/BaseFuture.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/futures/BaseFuture.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/futures/BaseFutureAdapter.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/futures/BaseFutureAdapter.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/futures/BaseFutureImpl.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/futures/BaseFutureImpl.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/futures/BaseFutureListener.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/futures/BaseFutureListener.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/futures/Cancel.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/futures/Cancel.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/futures/FutureAnnounce.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/futures/FutureAnnounce.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/futures/FutureAsyncTask.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/futures/FutureAsyncTask.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/futures/FutureBootstrap.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/futures/FutureBootstrap.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/futures/FutureChannelCreator.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/futures/FutureChannelCreator.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/futures/FutureCreator.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/futures/FutureCreator.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/futures/FutureDirect.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/futures/FutureDirect.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/futures/FutureDiscover.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/futures/FutureDiscover.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/futures/FutureDone.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/futures/FutureDone.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/futures/FutureForkJoin.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/futures/FutureForkJoin.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/futures/FutureLateJoin.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/futures/FutureLateJoin.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/futures/FutureLaterJoin.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/futures/FutureLaterJoin.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/futures/FuturePeerConnection.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/futures/FuturePeerConnection.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/futures/FuturePing.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/futures/FuturePing.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/futures/FutureProgres.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/futures/FutureProgres.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/futures/FutureResponse.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/futures/FutureResponse.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/futures/FutureRouting.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/futures/FutureRouting.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/futures/FutureRunnable.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/futures/FutureRunnable.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/futures/FutureShutdown.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/futures/FutureShutdown.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/futures/FutureSuccessEvaluator.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/futures/FutureSuccessEvaluator.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/futures/FutureSuccessEvaluatorCommunication.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/futures/FutureSuccessEvaluatorCommunication.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/futures/FutureSuccessEvaluatorOperation.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/futures/FutureSuccessEvaluatorOperation.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/futures/FutureTask.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/futures/FutureTask.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/futures/FutureWrappedBootstrap.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/futures/FutureWrappedBootstrap.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/futures/FutureWrapper.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/futures/FutureWrapper.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/futures/FutureWrapper2.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/futures/FutureWrapper2.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/futures/Futures.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/futures/Futures.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/holep/DuplicatesHandler.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/holep/DuplicatesHandler.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/holep/HolePInitiatorImpl.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/holep/HolePInitiatorImpl.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/holep/HolePRPC.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/holep/HolePRPC.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/holep/HolePScheduler.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/holep/HolePScheduler.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/holep/NATType.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/holep/NATType.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/holep/NATTypeDetection.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/holep/NATTypeDetection.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/holep/strategy/AbstractHolePStrategy.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/holep/strategy/AbstractHolePStrategy.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/holep/strategy/HolePStrategy.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/holep/strategy/HolePStrategy.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/holep/strategy/NonPreservingSequentialStrategy.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/holep/strategy/NonPreservingSequentialStrategy.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/holep/strategy/PortPreservingStrategy.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/holep/strategy/PortPreservingStrategy.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/message/Buffer.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/message/Buffer.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/message/CountConnectionOutboundHandler.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/message/CountConnectionOutboundHandler.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/message/DSASignatureCodec.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/message/DSASignatureCodec.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/message/DataFilter.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/message/DataFilter.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/message/DataFilterTTL.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/message/DataFilterTTL.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/message/DataMap.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/message/DataMap.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/message/Decoder.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/message/Decoder.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/message/Encoder.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/message/Encoder.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/message/KeyCollection.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/message/KeyCollection.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/message/KeyMap640Keys.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/message/KeyMap640Keys.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/message/KeyMapByte.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/message/KeyMapByte.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/message/Message.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/message/Message.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/message/MessageContentIndex.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/message/MessageContentIndex.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/message/MessageHeaderCodec.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/message/MessageHeaderCodec.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/message/MessageID.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/message/MessageID.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/message/NeighborSet.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/message/NeighborSet.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/message/RSASignatureCodec.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/message/RSASignatureCodec.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/message/SignatureCodec.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/message/SignatureCodec.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/message/TomP2PCumulationTCP.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/message/TomP2PCumulationTCP.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/message/TomP2POutbound.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/message/TomP2POutbound.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/message/TomP2PSinglePacketUDP.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/message/TomP2PSinglePacketUDP.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/message/TrackerData.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/message/TrackerData.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/nat/FutureNAT.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/nat/FutureNAT.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/nat/NATUtils.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/nat/NATUtils.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/nat/PeerBuilderNAT.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/nat/PeerBuilderNAT.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/nat/PeerNAT.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/nat/PeerNAT.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/natpmp/ExternalAddressRequestMessage.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/natpmp/ExternalAddressRequestMessage.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/natpmp/Gateway.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/natpmp/Gateway.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/natpmp/MapRequestMessage.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/natpmp/MapRequestMessage.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/natpmp/Message.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/natpmp/Message.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/natpmp/MessageQueue.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/natpmp/MessageQueue.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/natpmp/MessageResponseInterface.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/natpmp/MessageResponseInterface.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/natpmp/MessageType.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/natpmp/MessageType.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/natpmp/NatPmpDevice.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/natpmp/NatPmpDevice.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/natpmp/NatPmpException.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/natpmp/NatPmpException.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/natpmp/ResultCode.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/natpmp/ResultCode.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/natpmp/lgpl.txt" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/natpmp/lgpl.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/p2p/AutomaticFuture.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/p2p/AutomaticFuture.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/p2p/BroadcastHandler.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/p2p/BroadcastHandler.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/p2p/DefaultPeerStatisticComparator.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/p2p/DefaultPeerStatisticComparator.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/p2p/DistributedRouting.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/p2p/DistributedRouting.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/p2p/JobScheduler.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/p2p/JobScheduler.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/p2p/MaintenanceTask.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/p2p/MaintenanceTask.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/p2p/Peer.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/p2p/Peer.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/p2p/PeerBuilder.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/p2p/PeerBuilder.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/p2p/PeerInit.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/p2p/PeerInit.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/p2p/PeerReachable.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/p2p/PeerReachable.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/p2p/PeerReceivedBroadcastPing.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/p2p/PeerReceivedBroadcastPing.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/p2p/PeerStatisticComparator.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/p2p/PeerStatisticComparator.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/p2p/PostRoutingFilter.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/p2p/PostRoutingFilter.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/p2p/RTTPeerStatisticComparator.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/p2p/RTTPeerStatisticComparator.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/p2p/RequestConfiguration.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/p2p/RequestConfiguration.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/p2p/RequestP2PConfiguration.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/p2p/RequestP2PConfiguration.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/p2p/RoutingConfiguration.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/p2p/RoutingConfiguration.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/p2p/RoutingMechanism.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/p2p/RoutingMechanism.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/p2p/Shutdown.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/p2p/Shutdown.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/p2p/SlowPeerFilter.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/p2p/SlowPeerFilter.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/p2p/Statistics.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/p2p/Statistics.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/p2p/StructuredBroadcastHandler.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/p2p/StructuredBroadcastHandler.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/p2p/UpdatableTreeSet.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/p2p/UpdatableTreeSet.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/p2p/builder/BasicBuilder.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/p2p/builder/BasicBuilder.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/p2p/builder/BootstrapBuilder.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/p2p/builder/BootstrapBuilder.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/p2p/builder/BroadcastBuilder.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/p2p/builder/BroadcastBuilder.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/p2p/builder/Builder.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/p2p/builder/Builder.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/p2p/builder/DiscoverBuilder.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/p2p/builder/DiscoverBuilder.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/p2p/builder/PingBuilder.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/p2p/builder/PingBuilder.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/p2p/builder/RoutingBuilder.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/p2p/builder/RoutingBuilder.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/p2p/builder/SendDirectBuilder.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/p2p/builder/SendDirectBuilder.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/p2p/builder/ShutdownBuilder.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/p2p/builder/ShutdownBuilder.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/p2p/builder/SignatureBuilder.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/p2p/builder/SignatureBuilder.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/peers/DefaultMaintenance.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/peers/DefaultMaintenance.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/peers/DefaultPeerFilter.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/peers/DefaultPeerFilter.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/peers/IP.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/peers/IP.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/peers/LocalMapConf.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/peers/LocalMapConf.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/peers/Maintainable.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/peers/Maintainable.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/peers/Maintenance.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/peers/Maintenance.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/peers/Number160.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/peers/Number160.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/peers/Number320.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/peers/Number320.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/peers/Number480.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/peers/Number480.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/peers/Number640.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/peers/Number640.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/peers/PeerAddress.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/peers/PeerAddress.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/peers/PeerIPFilter.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/peers/PeerIPFilter.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/peers/PeerMap.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/peers/PeerMap.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/peers/PeerMapChangeListener.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/peers/PeerMapChangeListener.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/peers/PeerMapConfiguration.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/peers/PeerMapConfiguration.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/peers/PeerMapFilter.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/peers/PeerMapFilter.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/peers/PeerSocketAddress.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/peers/PeerSocketAddress.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/peers/PeerStatRoutingFilter.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/peers/PeerStatRoutingFilter.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/peers/PeerStatistic.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/peers/PeerStatistic.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/peers/PeerStatusListener.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/peers/PeerStatusListener.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/peers/RTT.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/peers/RTT.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/relay/DistributedRelay.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/relay/DistributedRelay.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/relay/Forwarder.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/relay/Forwarder.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/relay/NoDirectResponse.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/relay/NoDirectResponse.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/relay/PeerMapUpdateTask.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/relay/PeerMapUpdateTask.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/relay/RconRPC.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/relay/RconRPC.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/relay/RelayCallback.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/relay/RelayCallback.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/relay/RelayListener.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/relay/RelayListener.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/relay/RelayRPC.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/relay/RelayRPC.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/relay/RelayUtils.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/relay/RelayUtils.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/replication/AutoReplication.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/replication/AutoReplication.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/replication/IndirectReplication.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/replication/IndirectReplication.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/replication/Replication.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/replication/Replication.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/replication/ReplicationFactor.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/replication/ReplicationFactor.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/replication/ReplicationFilter.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/replication/ReplicationFilter.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/replication/ReplicationSender.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/replication/ReplicationSender.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/replication/ResponsibilityListener.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/replication/ResponsibilityListener.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/replication/SlowReplicationFilter.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/replication/SlowReplicationFilter.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/rpc/BloomfilterFactory.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/rpc/BloomfilterFactory.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/rpc/BroadcastRPC.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/rpc/BroadcastRPC.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/rpc/CountingBloomFilter.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/rpc/CountingBloomFilter.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/rpc/DefaultBloomfilterFactory.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/rpc/DefaultBloomfilterFactory.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/rpc/DigestInfo.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/rpc/DigestInfo.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/rpc/DigestResult.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/rpc/DigestResult.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/rpc/DirectDataRPC.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/rpc/DirectDataRPC.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/rpc/DispatchHandler.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/rpc/DispatchHandler.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/rpc/NeighborRPC.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/rpc/NeighborRPC.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/rpc/ObjectDataReply.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/rpc/ObjectDataReply.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/rpc/PingRPC.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/rpc/PingRPC.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/rpc/QuitRPC.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/rpc/QuitRPC.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/rpc/RPC.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/rpc/RPC.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/rpc/RPCUtils.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/rpc/RPCUtils.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/rpc/RawDataReply.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/rpc/RawDataReply.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/rpc/SendDirectBuilderI.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/rpc/SendDirectBuilderI.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/rpc/SimpleBloomFilter.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/rpc/SimpleBloomFilter.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/social/PeerSocial.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/social/PeerSocial.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/storage/AlternativeCompositeByteBuf.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/storage/AlternativeCompositeByteBuf.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/storage/Data.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/storage/Data.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/storage/DataBuffer.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/storage/DataBuffer.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/storage/DataSerializer.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/storage/DataSerializer.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/storage/DigestStorage.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/storage/DigestStorage.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/storage/DigestTracker.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/storage/DigestTracker.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/storage/StorageDisk.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/storage/StorageDisk.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/synchronization/Checksum.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/synchronization/Checksum.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/synchronization/Instruction.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/synchronization/Instruction.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/synchronization/PeerSync.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/synchronization/PeerSync.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/synchronization/RArray.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/synchronization/RArray.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/synchronization/RSync.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/synchronization/RSync.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/synchronization/SyncBuilder.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/synchronization/SyncBuilder.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/synchronization/SyncRPC.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/synchronization/SyncRPC.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/synchronization/SyncStat.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/synchronization/SyncStat.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/synchronization/SyncUtils.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/synchronization/SyncUtils.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/tracker/AddTrackerBuilder.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/tracker/AddTrackerBuilder.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/tracker/DistributedTracker.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/tracker/DistributedTracker.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/tracker/FutureTracker.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/tracker/FutureTracker.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/tracker/GetTrackerBuilder.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/tracker/GetTrackerBuilder.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/tracker/PeerBuilderTracker.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/tracker/PeerBuilderTracker.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/tracker/PeerExchange.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/tracker/PeerExchange.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/tracker/PeerExchangeHandler.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/tracker/PeerExchangeHandler.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/tracker/PeerExchangeRPC.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/tracker/PeerExchangeRPC.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/tracker/PeerTracker.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/tracker/PeerTracker.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/tracker/TrackerBuilder.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/tracker/TrackerBuilder.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/tracker/TrackerConfiguration.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/tracker/TrackerConfiguration.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/tracker/TrackerRPC.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/tracker/TrackerRPC.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/tracker/TrackerStorage.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/tracker/TrackerStorage.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/tracker/TrackerTriple.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/tracker/TrackerTriple.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/tracker/UtilsTracker.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/tracker/UtilsTracker.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/utils/CacheMap.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/utils/CacheMap.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/utils/ConcurrentCacheMap.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/utils/ConcurrentCacheMap.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/utils/ConcurrentCacheSet.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/utils/ConcurrentCacheSet.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/utils/FIFOCache.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/utils/FIFOCache.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/utils/MultiByteBufferInputStream.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/utils/MultiByteBufferInputStream.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/utils/Pair.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/utils/Pair.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/p2p/utils/Utils.java" afterPath="$PROJECT_DIR$/src/main/java/trunk/social/p2p/utils/Utils.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="tomp2plearn.iws" />
@@ -563,7 +295,7 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="PeerStatistic.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/p2p/peers/PeerStatistic.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/trunk/social/p2p/peers/PeerStatistic.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -573,7 +305,7 @@
         </entry>
       </file>
       <file leaf-file-name="Reservation.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/p2p/connection/Reservation.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/trunk/social/p2p/connection/Reservation.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -583,7 +315,7 @@
         </entry>
       </file>
       <file leaf-file-name="SignatureBuilder.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/p2p/p2p/builder/SignatureBuilder.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/trunk/social/p2p/p2p/builder/SignatureBuilder.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -593,7 +325,7 @@
         </entry>
       </file>
       <file leaf-file-name="DigestTracker.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/p2p/storage/DigestTracker.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/trunk/social/p2p/storage/DigestTracker.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -603,7 +335,7 @@
         </entry>
       </file>
       <file leaf-file-name="DiscoverBuilder.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/p2p/p2p/builder/DiscoverBuilder.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/trunk/social/p2p/p2p/builder/DiscoverBuilder.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -613,7 +345,7 @@
         </entry>
       </file>
       <file leaf-file-name="StorageDisk.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/p2p/storage/StorageDisk.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/trunk/social/p2p/storage/StorageDisk.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -623,7 +355,7 @@
         </entry>
       </file>
       <file leaf-file-name="DataFilter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/p2p/message/DataFilter.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/trunk/social/p2p/message/DataFilter.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -633,7 +365,7 @@
         </entry>
       </file>
       <file leaf-file-name="Builder.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/p2p/p2p/builder/Builder.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/trunk/social/p2p/p2p/builder/Builder.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -643,7 +375,7 @@
         </entry>
       </file>
       <file leaf-file-name="ConnectionBean.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/p2p/connection/ConnectionBean.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/trunk/social/p2p/connection/ConnectionBean.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -693,6 +425,7 @@
         <option value="$PROJECT_DIR$/src/test/java/trunk/social/p2p/nat/PeerNAT.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/p2p/connection/ConnectionBean.java" />
+        <option value="$PROJECT_DIR$/src/main/java/trunk/social/p2p/connection/ConnectionBean.java" />
       </list>
     </option>
   </component>
@@ -1403,12 +1136,12 @@
       <option name="presentableId" value="Default" />
       <updated>1486271551288</updated>
       <workItem from="1486271555446" duration="7462000" />
-      <workItem from="1486289612307" duration="924000" />
+      <workItem from="1486289612307" duration="1175000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8386000" />
+    <option name="totallyTimeSpent" value="8637000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1766,7 +1499,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/p2p/dht/ParallelRequestBuilder.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/trunk/social/p2p/dht/ParallelRequestBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1774,7 +1507,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/p2p/peers/PeerStatistic.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/trunk/social/p2p/peers/PeerStatistic.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1782,7 +1515,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/p2p/connection/Reservation.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/trunk/social/p2p/connection/Reservation.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1790,7 +1523,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/p2p/p2p/builder/SignatureBuilder.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/trunk/social/p2p/p2p/builder/SignatureBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1798,7 +1531,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/p2p/storage/DigestTracker.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/trunk/social/p2p/storage/DigestTracker.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1806,7 +1539,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/p2p/p2p/builder/DiscoverBuilder.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/trunk/social/p2p/p2p/builder/DiscoverBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1814,7 +1547,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/p2p/storage/StorageDisk.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/trunk/social/p2p/storage/StorageDisk.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1822,7 +1555,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/p2p/message/DataFilter.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/trunk/social/p2p/message/DataFilter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1830,7 +1563,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/p2p/p2p/builder/Builder.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/trunk/social/p2p/p2p/builder/Builder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1838,7 +1571,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/p2p/connection/ConnectionBean.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/trunk/social/p2p/connection/ConnectionBean.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
