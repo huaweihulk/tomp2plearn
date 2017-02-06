@@ -317,6 +317,7 @@ public final class PeerAddress implements Comparable<PeerAddress>, Serializable 
         return relays;
     }
 
+    @SuppressWarnings("Since15")
     public byte relayTypes() {
         if (relayTypes == null) {
             return EMPTY_RELAY_TYPES;
@@ -328,8 +329,7 @@ public final class PeerAddress implements Comparable<PeerAddress>, Serializable 
     /**
      * Creates a peer address, where the byte array has to be in the rigth format and in the right size. The new
      * offset can be accessed with offset().
-     *
-     * @param me The serialized array
+     *The serialized array
      */
     public static Pair<PeerAddress, Integer> decode(final byte[] array) {
         return decode(array, 0);
@@ -413,6 +413,7 @@ public final class PeerAddress implements Comparable<PeerAddress>, Serializable 
     }
 
     //we have a 2 byte header
+    @SuppressWarnings("Since15")
     private static PeerAddressBuilder decodeHeader(final PeerAddressBuilder builder, final int header) {
         final byte[] tmp = new byte[]{(byte) ((header & RELAY_TYPE_MASK) >>> 17)};
         builder.ipv4Flag((header & IPV4) == IPV4)
